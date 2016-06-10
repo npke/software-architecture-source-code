@@ -63,6 +63,23 @@ https://youtu.be/z17DX8c3u-Q
 [16-04-13] Video minh họa sử dụng Dynamic Methods
 https://youtu.be/l8tUZ8v9eqk
 
+**WEEK 9:**
+[16-04-20] Video ví dụ minh họa về set target
+https://www.youtube.com/watch?v=kr0ISXbWy1E
+
+[16-04-20] Video ví dụ minh họa về liên kết event:
+https://www.youtube.com/watch?v=x1D2DE9a6eQ&feature=youtu.be
+
+[16-04-20] Video ví dụ mẫu về Observer 
+https://www.youtube.com/watch?v=mygx-cwTb1w&feature=youtu.be
+
+**WEEK 10:**
+[16-04-27] Video minh họa về post tin lên website và notification (hoặc tự duyệt/lọc tin) - phần 1/2
+https://www.youtube.com/watch?v=kQg_bmBarPs
+
+[16-04-27] Video minh họa về post tin lên website và notification (hoặc tự duyệt/lọc tin) - phần 2/2
+https://www.youtube.com/watch?v=M2MWJxYfiJA
+
 **WEEK 11:**
 [16-05-04] Video demo xây dựng 1 framework đơn giản
 https://youtu.be/RVvgLa7l1yQ
@@ -76,6 +93,10 @@ https://youtu.be/Z_COVsvONwY
 [16-05-11] Video minh họa sử dụng rule và transformation để ánh xạ thuộc tính
 https://youtu.be/1Uf-wNZpz9U
 
+
 **WEEK13:**
+Seminar
+
+**WEEK14:**
 [16-05-26] Video minh họa tích hợp các hàm xử lý
 https://youtu.be/zG7aqQ5R_4c
