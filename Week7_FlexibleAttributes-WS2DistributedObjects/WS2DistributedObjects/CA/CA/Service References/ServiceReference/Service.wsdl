@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Add">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Init">
+        <s:complexType />
+      </s:element>
+      <s:element name="InitResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="TimSanPhamTheoTen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TenSP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TimSanPhamTheoTenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TimSanPhamTheoTenResult" type="tns:ArrayOfSanPham" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSanPham">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SanPham" nillable="true" type="tns:SanPham" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SanPham">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MSSP" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TenSP" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DonGia" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DatHang">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="chitiet" type="tns:ArrayOfChiTietDonDatHang" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfChiTietDonDatHang">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ChiTietDonDatHang" nillable="true" type="tns:ChiTietDonDatHang" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ChiTietDonDatHang">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SP" type="tns:SanPham" />
+          <s:element minOccurs="1" maxOccurs="1" name="DonGia" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SoLuong" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DatHangResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DatHangResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TongTriGiaDonDatHang">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MSDDH" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TongTriGiaDonDatHangResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TongTriGiaDonDatHangResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LayTenSanPhamTheoMSSP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MSSP" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LayTenSanPhamTheoMSSPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LayTenSanPhamTheoMSSPResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CapNhatTenSanPhamTheoMSSP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MSSP" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="TenSP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CapNhatTenSanPhamTheoMSSPResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddSoapIn">
+    <wsdl:part name="parameters" element="tns:Add" />
+  </wsdl:message>
+  <wsdl:message name="AddSoapOut">
+    <wsdl:part name="parameters" element="tns:AddResponse" />
+  </wsdl:message>
+  <wsdl:message name="InitSoapIn">
+    <wsdl:part name="parameters" element="tns:Init" />
+  </wsdl:message>
+  <wsdl:message name="InitSoapOut">
+    <wsdl:part name="parameters" element="tns:InitResponse" />
+  </wsdl:message>
+  <wsdl:message name="TimSanPhamTheoTenSoapIn">
+    <wsdl:part name="parameters" element="tns:TimSanPhamTheoTen" />
+  </wsdl:message>
+  <wsdl:message name="TimSanPhamTheoTenSoapOut">
+    <wsdl:part name="parameters" element="tns:TimSanPhamTheoTenResponse" />
+  </wsdl:message>
+  <wsdl:message name="DatHangSoapIn">
+    <wsdl:part name="parameters" element="tns:DatHang" />
+  </wsdl:message>
+  <wsdl:message name="DatHangSoapOut">
+    <wsdl:part name="parameters" element="tns:DatHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="TongTriGiaDonDatHangSoapIn">
+    <wsdl:part name="parameters" element="tns:TongTriGiaDonDatHang" />
+  </wsdl:message>
+  <wsdl:message name="TongTriGiaDonDatHangSoapOut">
+    <wsdl:part name="parameters" element="tns:TongTriGiaDonDatHangResponse" />
+  </wsdl:message>
+  <wsdl:message name="LayTenSanPhamTheoMSSPSoapIn">
+    <wsdl:part name="parameters" element="tns:LayTenSanPhamTheoMSSP" />
+  </wsdl:message>
+  <wsdl:message name="LayTenSanPhamTheoMSSPSoapOut">
+    <wsdl:part name="parameters" element="tns:LayTenSanPhamTheoMSSPResponse" />
+  </wsdl:message>
+  <wsdl:message name="CapNhatTenSanPhamTheoMSSPSoapIn">
+    <wsdl:part name="parameters" element="tns:CapNhatTenSanPhamTheoMSSP" />
+  </wsdl:message>
+  <wsdl:message name="CapNhatTenSanPhamTheoMSSPSoapOut">
+    <wsdl:part name="parameters" element="tns:CapNhatTenSanPhamTheoMSSPResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="Add">
+      <wsdl:input message="tns:AddSoapIn" />
+      <wsdl:output message="tns:AddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Init">
+      <wsdl:input message="tns:InitSoapIn" />
+      <wsdl:output message="tns:InitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TimSanPhamTheoTen">
+      <wsdl:input message="tns:TimSanPhamTheoTenSoapIn" />
+      <wsdl:output message="tns:TimSanPhamTheoTenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DatHang">
+      <wsdl:input message="tns:DatHangSoapIn" />
+      <wsdl:output message="tns:DatHangSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TongTriGiaDonDatHang">
+      <wsdl:input message="tns:TongTriGiaDonDatHangSoapIn" />
+      <wsdl:output message="tns:TongTriGiaDonDatHangSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LayTenSanPhamTheoMSSP">
+      <wsdl:input message="tns:LayTenSanPhamTheoMSSPSoapIn" />
+      <wsdl:output message="tns:LayTenSanPhamTheoMSSPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CapNhatTenSanPhamTheoMSSP">
+      <wsdl:input message="tns:CapNhatTenSanPhamTheoMSSPSoapIn" />
+      <wsdl:output message="tns:CapNhatTenSanPhamTheoMSSPSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Add">
+      <soap:operation soapAction="http://tempuri.org/Add" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Init">
+      <soap:operation soapAction="http://tempuri.org/Init" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimSanPhamTheoTen">
+      <soap:operation soapAction="http://tempuri.org/TimSanPhamTheoTen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatHang">
+      <soap:operation soapAction="http://tempuri.org/DatHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TongTriGiaDonDatHang">
+      <soap:operation soapAction="http://tempuri.org/TongTriGiaDonDatHang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayTenSanPhamTheoMSSP">
+      <soap:operation soapAction="http://tempuri.org/LayTenSanPhamTheoMSSP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CapNhatTenSanPhamTheoMSSP">
+      <soap:operation soapAction="http://tempuri.org/CapNhatTenSanPhamTheoMSSP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Add">
+      <soap12:operation soapAction="http://tempuri.org/Add" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Init">
+      <soap12:operation soapAction="http://tempuri.org/Init" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimSanPhamTheoTen">
+      <soap12:operation soapAction="http://tempuri.org/TimSanPhamTheoTen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatHang">
+      <soap12:operation soapAction="http://tempuri.org/DatHang" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TongTriGiaDonDatHang">
+      <soap12:operation soapAction="http://tempuri.org/TongTriGiaDonDatHang" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayTenSanPhamTheoMSSP">
+      <soap12:operation soapAction="http://tempuri.org/LayTenSanPhamTheoMSSP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CapNhatTenSanPhamTheoMSSP">
+      <soap12:operation soapAction="http://tempuri.org/CapNhatTenSanPhamTheoMSSP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost:16197/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost:16197/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

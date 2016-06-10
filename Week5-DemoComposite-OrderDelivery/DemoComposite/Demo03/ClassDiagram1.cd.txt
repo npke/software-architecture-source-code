@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Polymorphism">
+    <Position X="1.156" Y="2.885" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Metamorphism">
+    <Position X="0.5" Y="3.99" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="Demo03.Program" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Demo03.MyTreeClass">
+    <Position X="0.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MyTreeClass.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RootNode" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Demo03.Node">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Demo03.LeafNode">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LeafNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Demo03.NodeWithChild">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <AssociationLine Name="Left" Type="Demo03.Node" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.406" Y="3.75" />
+        <Point X="8.406" Y="2.87" />
+        <Point X="5.5" Y="2.87" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Right" Type="Demo03.Node" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.625" Y="3.75" />
+        <Point X="8.625" Y="2.086" />
+        <Point X="5.5" Y="2.086" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAACAAAAAAABAAAAAACACAAAAAAAA=</HashCode>
+      <FileName>NodeWithChild.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Left" />
+      <Property Name="Right" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

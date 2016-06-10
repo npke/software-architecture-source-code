@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DemoDistributedObject.Program" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDistributedObject.ServerObjbect">
+    <Position X="9.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAIAIAAAACAAAIAAE=</HashCode>
+      <FileName>ServerObjbect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDistributedObject.SFilm">
+    <Position X="7.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAQAAQAEIAGAAAAAAAAAAAE=</HashCode>
+      <FileName>SFilm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDistributedObject.SCinema">
+    <Position X="10.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEIAAAAAAAAAAAAAE=</HashCode>
+      <FileName>SCinema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDistributedObject.ServerObjectManager">
+    <Position X="7" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAABIAAACFAAACAgAAAAAgAAAAAAAAAIAAE=</HashCode>
+      <FileName>ServerObjectManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDistributedObject.ClientObject">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAEAAIAIAAAAAAAAAABA=</HashCode>
+      <FileName>ClientObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDistributedObject.CFilm">
+    <Position X="1.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAACAAI=</HashCode>
+      <FileName>CFilm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDistributedObject.CCinema">
+    <Position X="3.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CCinema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoDistributedObject.ClientObjectManager">
+    <Position X="4.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAFAAAAAAAAAAAAAAAAAAAAAIAgE=</HashCode>
+      <FileName>ClientObjectManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

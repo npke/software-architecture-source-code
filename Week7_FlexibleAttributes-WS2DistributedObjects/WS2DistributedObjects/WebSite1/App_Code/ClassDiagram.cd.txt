@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Service" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAQAAABCAAAAAAAACgAAAAAA=</HashCode>
+      <FileName>App_Code\Service.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SanPham">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAABAAABACAAAQAAAAAhAAAA=</HashCode>
+      <FileName>App_Code\SanPham.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DonDatHang">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAACAAAAAAAAAAAAAAABAQAAAA=</HashCode>
+      <FileName>App_Code\DonDatHang.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChiTietDonDatHang">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAACAAAAAAAgAAAAIAACAAAAAAAAAgAAAA=</HashCode>
+      <FileName>App_Code\ChiTietDonDatHang.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DemoState.Program" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoState.NhanVat">
+    <Position X="2.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAECAAACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>NhanVat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoState.TrangThai">
+    <Position X="6" Y="0.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAgAAgAAAAAAAAAAAAAAAAAAAAAAAAAAABAAQ=</HashCode>
+      <FileName>TrangThai.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoState.DangMayMan">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DangMayMan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoState.DangTrungDoc">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DangTrungDoc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoState.DangDongBang">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DangDongBang.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DemoState.KinhNghiemNhanDoi">
+    <Position X="8.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>KinhNghiemNhanDoi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

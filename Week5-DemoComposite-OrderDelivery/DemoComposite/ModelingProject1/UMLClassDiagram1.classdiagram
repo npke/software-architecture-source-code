@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d853e0ef-0366-4507-b276-00cabd011e53" name="UMLClassDiagram1" linkedPackageId="eab7cdf9-97bb-4834-aed0-45775d87b74b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="d51ca862-6801-48ef-88f6-9b51bd3b1c45">
+      <profileInstance Id="ede63c6d-9162-45bf-9e05-51f82c977f8e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="bcdd86c7-4ca8-4f5c-b0cb-c61896e5fb35">
+      <profileInstance Id="5e3d79a7-1949-4df5-9fd2-fe8a9342443a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b66f82b5-b330-44fe-9da9-800308094a77" name="Unit" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="980307b0-36b0-4670-b998-2a96a361aee6" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7026df58-7bb6-4e45-9da3-7ae2365c196f" name="Ground Unit" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="35a5e5e6-f98f-4cf7-9f9d-ecf5307d0195" />
+        <generalsInternal>
+          <generalization Id="c97ba004-45d0-4214-97a4-1f1e4d459509" isSubstitutable="false">
+            <classMoniker Id="b66f82b5-b330-44fe-9da9-800308094a77" LastKnownName="Unit" />
+            <elementDefinition Id="384af8be-f2bc-4b24-9b3c-e0c81f999c06" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d3ce75ee-ee3e-410d-8e10-faa0d02649ba" name="Air Unit" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3d17bd2b-67a4-4dfe-83e3-55a271c89637" />
+        <generalsInternal>
+          <generalization Id="1f0b1a8f-7c71-4556-9db7-26f0436eba87" isSubstitutable="false">
+            <classMoniker Id="b66f82b5-b330-44fe-9da9-800308094a77" LastKnownName="Unit" />
+            <elementDefinition Id="8de02d4f-ecba-4b68-958c-5ed965826a08" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="367cbe2d-a204-43a8-b3ab-387787ebb106" name="Firebat" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c01c0f35-bf09-4ec0-8c3e-47caf7f7da6f" />
+        <generalsInternal>
+          <generalization Id="05a6b3ef-5965-44fa-8f40-0a26be3d4b12" isSubstitutable="false">
+            <classMoniker Id="7026df58-7bb6-4e45-9da3-7ae2365c196f" LastKnownName="Ground Unit" />
+            <elementDefinition Id="567a2e87-7a76-4839-ab2f-21d9980264d7" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="241d6351-da90-43db-8b70-02676f01b24a" name="Sky Witch" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="26ad9092-f420-4f01-9c43-bd44914fcd2c" />
+        <generalsInternal>
+          <generalization Id="94399ff5-72c2-44c8-b48c-dfaa643d3276" isSubstitutable="false">
+            <classMoniker Id="7026df58-7bb6-4e45-9da3-7ae2365c196f" LastKnownName="Ground Unit" />
+            <elementDefinition Id="a6fb775c-1855-4a7c-aa21-957bc47dad1a" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="ac219acc-556b-49ce-bf6b-e151fb26398e" isDerived="false" sourceEndRoleName="B2" targetEndRoleName="C" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d3ce75ee-ee3e-410d-8e10-faa0d02649ba" LastKnownName="Air Unit" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4a065cd2-cb20-45b1-ba67-adfe8aab8977" name="B2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="71d533fe-9120-4ae8-97cf-6fd4d33cc1bf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8d5a4d04-b6ed-4173-87ba-e2a19fcd0c70" name="C" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="159b9879-ef16-4dd6-933f-ae74f88f1c27" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="55262f1f-d14f-48ad-b4b4-38314ed2c413" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="78b29049-620c-4e5b-8050-dc8610497757" name="DropShip" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="348680d1-e95b-48eb-82f2-69088ed1daef" />
+        <generalsInternal>
+          <generalization Id="a7b8eb29-2e9f-45d9-9986-c4449848bf7c" isSubstitutable="false">
+            <classMoniker Id="d3ce75ee-ee3e-410d-8e10-faa0d02649ba" LastKnownName="Air Unit" />
+            <elementDefinition Id="2d5e01dc-321c-4925-8025-4dde43c0626a" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="5790541d-2ce3-4198-b124-9b6cba6597f5" isDerived="false" sourceEndRoleName="C1" targetEndRoleName="B" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7026df58-7bb6-4e45-9da3-7ae2365c196f" LastKnownName="Ground Unit" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="18256feb-7ce6-42cc-8b5b-087fe2272d9e" name="C1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="38b9bb6c-b4a6-4e93-856a-12236e08084f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5b9c9e8f-c303-40ce-85c8-3f511687f4e4" name="B" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4b0c4945-a5bd-4d62-876f-3367421d20bb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="113be1e2-da92-4957-9962-c24f52afd16a" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a96a7818-db2a-4c16-b880-bd1d0358c586" name="Fighter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="76439c6e-b382-4113-9e61-d561b2821f80" />
+        <generalsInternal>
+          <generalization Id="8f852ce0-322d-4685-b025-794fadc8a8a0" isSubstitutable="false">
+            <classMoniker Id="d3ce75ee-ee3e-410d-8e10-faa0d02649ba" LastKnownName="Air Unit" />
+            <elementDefinition Id="6c5f7597-0d45-49e4-924f-ee3fa31dbde2" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="eab7cdf9-97bb-4834-aed0-45775d87b74b" name="ModelingProject1">
+    <elementDefinition Id="08d89e6b-0e9b-426e-be5c-5e147ca44dd1" />
+  </package>
+</logicalClassDesignerModel>

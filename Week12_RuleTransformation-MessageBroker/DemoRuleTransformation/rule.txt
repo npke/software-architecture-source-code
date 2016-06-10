@@ -1,0 +1,21 @@
+3
+
+Student
+SinhVien
+Fullname
+Ho Ten
+DirectCopy
+
+Student
+SinhVien
+StudentID
+MSSV
+DirectCopy
+
+Student
+SinhVien
+Year of Birth
+Nam sinh
+String2Integer
+
+

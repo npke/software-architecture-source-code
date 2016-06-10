@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="0e297ad5-8bb3-45a7-9bbf-0bc7c8be0c94" name="UMLClassDiagram1" linkedPackageId="4b4fba62-3c31-4a03-ad4e-c529bd17006a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="da3c3c07-5af2-4e7a-b805-1041228930ad">
+      <profileInstance Id="3dc8195a-a6b7-4451-98b5-148d21e8cc84" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6b8b7bee-6d3c-47aa-9256-f4b49f01b5e2">
+      <profileInstance Id="2b21458e-925f-459f-89bf-75477bc2b793" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8fbcf992-94cb-474e-b453-134a80a0bb87" name="Invoker" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ba1a1f9e-cbc9-4117-9709-e6c924877a3d" />
+        <targetEnds>
+          <association Id="59580763-e7ae-4188-8256-807b4d8ac700" isDerived="false" sourceEndRoleName="Invoker" targetEndRoleName="ACommand" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c70abfb3-7545-4607-9f09-c501aa044c5e" LastKnownName="ACommand" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f83df8b0-2abc-4de2-8d3b-5fd0a76484f0" name="Invoker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d115c3e9-226c-42e8-8ecf-b4b3064488af" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cfa80601-566e-4d56-a913-d4b7468dd1ae" name="ACommand" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f5ad1036-e30d-4ca2-8df3-ad34bc05fc0c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1f7198ed-a1f7-4095-b2c7-638921a4b4c8" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c70abfb3-7545-4607-9f09-c501aa044c5e" name="ACommand" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="135a6ee0-6628-472a-bf72-0613b5415174" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d4f54ded-0f8c-4b67-9237-3da97023b749" name="CommandType1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2d333b14-1eae-428b-b90d-264426645fea" />
+        <generalsInternal>
+          <generalization Id="306c8de4-e9eb-4ca1-819b-d1a058e9a693" isSubstitutable="false">
+            <classMoniker Id="c70abfb3-7545-4607-9f09-c501aa044c5e" LastKnownName="ACommand" />
+            <elementDefinition Id="5542b0c3-ad46-4759-a7c0-1003fb6eb0e1" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b4e276fd-6b43-435b-9905-5afd721d708a" name="CommandType2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bf01f25a-9cfc-4f6c-af17-37e83c3ff47e" />
+        <generalsInternal>
+          <generalization Id="5b5e0a1a-1cd5-4393-a5fd-583470a06775" isSubstitutable="false">
+            <classMoniker Id="c70abfb3-7545-4607-9f09-c501aa044c5e" LastKnownName="ACommand" />
+            <elementDefinition Id="4f32a5a5-ceca-465f-9f08-8f02205500db" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0ac3e9c2-f9da-4a49-b555-4d87be90af8f" name="Subject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fb699415-6093-4b60-a493-fa137d193b14" />
+        <targetEnds>
+          <association Id="f1a32de0-b7f5-4f9a-985b-588958a5e6b7" isDerived="false" sourceEndRoleName="Subject" targetEndRoleName="AStrategy" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b45ccae5-bf0b-4674-a7c3-ed49897b1930" LastKnownName="AStrategy" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="588a3bd0-d412-489d-a23a-cac5e7dac1b2" name="Subject" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a4d7554d-0f19-4c34-b7e1-cd986f834ac1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a6d1d347-c389-4b80-8917-d01fc88b9be3" name="AStrategy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3a189358-e766-443b-8034-65c010f9b0a9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f2afa098-cdef-4ba3-b475-c50182da7a1d" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b45ccae5-bf0b-4674-a7c3-ed49897b1930" name="AStrategy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6fa28079-1399-4ba0-8765-ed5960090919" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3d97b866-6a9f-4a4b-9446-4960d9939ab4" name="Strategy1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0055f1ac-6c89-400c-9a54-86c4770fc189" />
+        <generalsInternal>
+          <generalization Id="babdce99-4a3d-4722-ab04-5b3af031e472" isSubstitutable="false">
+            <classMoniker Id="b45ccae5-bf0b-4674-a7c3-ed49897b1930" LastKnownName="AStrategy" />
+            <elementDefinition Id="1a8cba86-b79b-41b3-803b-ad17fd0a335a" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c38c8784-3856-4e2d-bdc8-32650eb33f41" name="Strategy2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="edf708d9-740a-449b-bd11-dccb342c68bf" />
+        <generalsInternal>
+          <generalization Id="1843a389-c04c-45e5-864e-703bc7fd2eca" isSubstitutable="false">
+            <classMoniker Id="b45ccae5-bf0b-4674-a7c3-ed49897b1930" LastKnownName="AStrategy" />
+            <elementDefinition Id="20701e56-b2c4-43a9-ba91-b5a28732ffbc" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="4b4fba62-3c31-4a03-ad4e-c529bd17006a" name="ModelingProject1">
+    <elementDefinition Id="523791d4-02b9-4084-9c86-6b0905de451d" />
+  </package>
+</logicalClassDesignerModel>
